@@ -16,19 +16,19 @@
         <header>
             <nav>
                 <div class="left">
-                    <span>Logo</span>
+                    <span>Ben's Bakery</span>
                 </div>
                 <div class="right">
                     <div class="rightNavLinks">
                         <ul>
                             <li>
-                                <a href="">Home</a>
+                                <a href="#sectionC">Our Story</a>
                             </li>
                             <li>
-                                <a href="">About</a>
+                                <a href="#sectionB">Our Bread</a>
                             </li>
                             <li>
-                                <a href="">Contact</a>
+                                <a href="#sectionD">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -37,7 +37,72 @@
                 </div>
             </nav>
         </header>
+
+        <main>
+            <section id="sectionA">
+                <h1>Ben's Bakery</h1>
+                <span>Artisan Bread</span>
+            </section>
+            <section id="sectionB">
+                <h2>Our Bread</h2>
+                <div class="galleryWrapper">
+                    <div class="menuItem">
+                        <img src="./img/sourDoughBread.jpeg" alt="Sourdough Bread">
+                        <a href="">Artisan Sourdough</a>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/croissant.jpg" alt="Croissant">
+                        <a href="">Croissants</a>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/chocolateCroissants.jpeg" alt="Chocolate Croissant">
+                        <a href="">Chocolate Croissants</a>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/wholeGrainBread.jpeg" alt="Whole Grain Bread">
+                        <a href="">Whole Grain Bread</a>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/classicRolls.jpeg" alt="Rolls">
+                        <a href="">Classic Rolls</a>
+                    </div>
+                    <div class="menuItem">
+                        <img src="./img/classicLoaf.jpeg" alt="Bread Loaf">
+                        <a href="">Classic Loafs</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sectionC">
+                <div class="left">
+                    <h2>Our Story</h2>
+                    <p>Ben's Bakery is a one-man operation. He started the bakery from his own kitchen with a simple
+                        goal in mind: to share his love for baking with the community.</p>
+                    <a href="">Read More</a>
+                </div>
+                <img src="./img/manBaking.jpeg" alt="Man baking">
+            </section>
+            <section id="sectionD">
+                <span>Want to place an Order?</span>
+                <h2>Contact US</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email" required>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                        required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+
     </section>
+    <footer>
+        <span>&copy; Copyright 2023, Ben's Bakery</span>
+    </footer>
 </body>
 
 </html>

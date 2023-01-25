@@ -1,108 +1,333 @@
 * {
-    font-size: 10px;
-    box-sizing: border-box;
-    margin: 0;
+  font-size: 10px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.flex,
+body,
+nav,
+.right,
+.rightNavLinks ul,
+#sectionA,
+#sectionB,
+#sectionC {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+body {
+  background-color: #1e1f1f;
+}
+
+#wrapper {
+  max-width: 1920px;
+  width: 100vw;
+  color: white;
+  padding: 0 50px;
+}
+
+.left span {
+  font-size: 4rem;
+}
+
+header {
+  padding: 18px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background-color: #181818;
+}
+
+nav,
+.rightNavLinks ul {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  width: 96%;
+  margin: auto;
+}
+
+.right {
+  flex-direction: row;
+}
+
+.rightNavLinks ul {
+  gap: 50px;
+  background-color: #181818;
+}
+
+.rightNavLinks li a {
+  font-size: 2rem;
+  color: white;
+}
+
+#hamburgerMenu {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+#hamburgerMenu img {
+  width: 34px;
+  filter: invert(100%) sepia(0%) saturate(7428%) hue-rotate(130deg)
+    brightness(112%) contrast(115%);
+}
+
+img {
+  width: 100%;
+}
+
+#sectionA {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url("../img/breadBackground.jpeg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 10rem;
+}
+
+#sectionA span {
+  margin-top: 50px;
+  font-size: 4rem;
+}
+
+#sectionB h2 {
+  margin: 100px 0 50px;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.galleryWrapper {
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.menuItem {
+  width: 438px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.menuItem img {
+  width: auto;
+  height: 292px;
+}
+
+a {
+  color: white;
+  font-size: 3rem;
+}
+
+a:hover {
+  color: #ff9900;
+  font-size: 3rem;
+}
+
+#sectionC {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  height: 80vh;
+  margin-top: 100px;
+}
+
+#sectionC .left {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: 2em;
+  line-height: 3.5rem;
+}
+
+#sectionC img {
+  width: 50%;
+}
+
+#sectionC a {
+  font-size: 1.75rem;
+}
+
+#sectionD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  margin-bottom: 100px;
+}
+
+#sectionD span {
+  font-size: 1.5rem;
+  color: #ff9900;
+}
+
+form {
+  width: 60%;
+}
+
+form label {
+  font-size: 2rem;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #ff9900;
+  color: white;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  background-color: #181818;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 50px;
+  width: 100%;
+}
+
+footer span {
+  font-size: 1.7rem;
+  color: white;
+}
+
+@media screen and (max-width: 1025px) {
+  #wrapper {
     padding: 0;
   }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  ol,
-  ul {
-    list-style: none;
-  }
-  
-  .flex,
-  body,
-  nav,
-  .right,
-  .rightNavLinks ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  #wrapper {
-    padding: 15px 50px;
-    max-width: 1920px;
-    width: 100vw;
-  }
-  
-  .left span {
-    font-size: 4rem;
-  }
-  
-  header {
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10000;
-    background-color: gray;
-  }
-  
-  nav,
-  .rightNavLinks ul {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  nav {
-    width: 96%;
-    margin: auto;
-  }
-  
-  .right {
-    flex-direction: row;
-  }
-  
-  .rightNavLinks ul {
-    gap: 50px;
-  }
-  
-  .rightNavLinks li a {
-    font-size: 2rem;
-    color: black;
-  }
-  
   #hamburgerMenu {
-    background-color: transparent;
-    border: none;
+    display: block;
+    position: absolute;
+    right: 50px;
+    z-index: 100;
+  }
+
+  .rightNavLinks {
     display: none;
   }
-  
-  #hamburgerMenu img {
-    width: 34px;
+
+  .mobileNav {
+    display: block;
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    right: 0;
+    top: 8rem;
+    overflow: hidden;
   }
-  
-  @media screen and (max-width: 1025px) {
-    #hamburgerMenu {
-      display: block;
-      position: absolute;
-      right: 50px;
-      z-index: 100;
-    }
-  
-    .rightNavLinks {
-      display: none;
-    }
-  
-    .mobileNav {
-      display: block;
-      position: fixed;
-      background-color: rgb(245, 245, 245);
-      width: 100%;
-      right: 0;
-      top: 8rem;
-      overflow: hidden;
-    }
-  
-    .mobileNav ul {
-      flex-direction: column;
-      padding: 15px;
-    }
+
+  .mobileNav ul {
+    flex-direction: column;
+    padding: 15px;
   }
+
+  #sectionC {
+    flex-direction: column;
+    text-align: center;
+    gap: 100px;
+  }
+
+  #sectionC .left {
+    gap: 55px;
+    width: 90%;
+  }
+
+  #sectionC img {
+    width: 100%;
+  }
+
+  #sectionD {
+    margin-top: 200px;
+  }
+
+  #sectionD h2 {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  #sectionA span {
+    font-size: 2.75rem;
+  }
+
+  .menuItem img {
+    height: 200px;
+  }
+
+  .menuItem a {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  #sectionD
+  {
+    margin-top: 50px;
+  }
+}

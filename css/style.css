@@ -336,5 +336,10 @@ footer span {
     font-size: 3rem;
   }
 
+  #sectionC img {
+    width: 75%;
+    margin-bottom: 275px;
+  }
+
 }
 

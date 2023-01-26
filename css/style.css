@@ -167,7 +167,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   gap: 50px;
-  height: 90vh;
+  height: 80vh;
   margin-top: 100px;
   margin-bottom: 250px;
 }
